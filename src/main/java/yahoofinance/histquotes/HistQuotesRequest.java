@@ -108,6 +108,7 @@ public class HistQuotesRequest {
             }
         } catch (IOException ex) {
             YahooFinance.logger.log(Level.SEVERE, ex.toString(), ex);
+            throw ex;
         }
         return result;
     }
